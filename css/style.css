@@ -1,0 +1,66 @@
+::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5af19;
+    box-shadow: inset 7px 10px 12px 0px #f17711;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+}
+
+main {
+    padding-top: 64px;
+}
+
+nav,
+footer {
+    background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
+}
+
+.background {
+    background: linear-gradient(180deg, #f12711 0%, #f5af19 100%);
+}
+
+.sidenav {
+    background-color: #292929;
+}
+
+.sidenav li>a {
+    color: #ccc;
+}
+
+.sidenav li>a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.sidenav li>a>i,
+.sidenav li>a>[class^="mdi-"],
+.sidenav li>a li>a>[class*="mdi-"],
+.sidenav li>a>i.material-icons {
+    color: #ccc !important;
+}
+
+body {
+    background-color: #292929;
+}
+
+.footer-copyright span>a {
+    color: rgb(0, 132, 255);
+}
+
+.page-footer {
+    padding-top: 0;
+}
