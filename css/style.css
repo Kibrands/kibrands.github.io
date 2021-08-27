@@ -21,10 +21,6 @@ nav {
     z-index: 1;
 }
 
-main {
-    padding-top: 64px;
-}
-
 nav,
 footer {
     background: linear-gradient(90deg, #f12711 0%, #f5af19 100%);
@@ -63,4 +59,15 @@ body {
 
 .page-footer {
     padding-top: 0;
+}
+
+#initial-text {
+    font-size: 2.5rem;
+    padding-top: 150px;
+    font-weight: bold;
+    text-shadow: 0 0 7px #000;
+}
+
+#dynamic-text {
+    color: #22cccc;
 }

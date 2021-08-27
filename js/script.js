@@ -1,10 +1,15 @@
+function printText(text) {
+    $('#dynamic-text').empty()
+    $('#dynamic-text').append(text)
+}
+
 $(document).ready(function() {
-    $('.sidenav').sidenav();
-    $('.parallax').parallax();
-    $('.scrollspy').scrollSpy();
-    $('#copyright-text').text(new Date().getFullYear());
+    $('.sidenav').sidenav()
+    $('.parallax').parallax()
+    $('.scrollspy').scrollSpy()
+    $('#copyright-text').text(new Date().getFullYear())
     $('.sidenav-link').click(() => {
-        M.Sidenav.getInstance($('.sidenav')).close();
+        M.Sidenav.getInstance($('.sidenav')).close()
     });
 
     // Particles
@@ -117,5 +122,26 @@ $(document).ready(function() {
             }
         },
         "retina_detect": true
-    });
+    })
+
+    var count = 0
+    $('#dynamic-text').append("Learn")
+    setInterval(() => {
+        switch(count) {
+            case 0:
+                printText('Develop')
+                break
+            case 1:
+                printText('Design')
+                break
+            case 2:
+                printText('Learn')
+                break
+        }
+        if (count < 2)
+            count++
+        else
+            count = 0
+    }, 2000)
+
 });
